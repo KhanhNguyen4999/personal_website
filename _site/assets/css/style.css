@@ -1,0 +1,308 @@
+/* Modern, clean styling for personal website */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+  background: #f8f9fa;
+}
+
+/* Header and Navigation */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+header h1 a:hover {
+  opacity: 0.8;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main Content */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  min-height: 60vh;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #34495e;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.4em;
+  color: #34495e;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Home Page Styling */
+main > h1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+main > h2 {
+  border-left: 4px solid #667eea;
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  border: none;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.project-card h2 a {
+  color: #2c3e50;
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project-card > a {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.project-card > a:hover {
+  background: #764ba2;
+  text-decoration: none;
+}
+
+/* Blog Posts */
+.blog-posts {
+  margin-top: 30px;
+}
+
+.post-preview {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-preview:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.post-preview h2 {
+  margin-top: 0;
+  font-size: 1.6em;
+}
+
+.post-preview h2 a {
+  color: #2c3e50;
+}
+
+.post-meta {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.post-preview > a {
+  color: #667eea;
+  font-weight: 500;
+}
+
+/* Individual Post/Project Pages */
+article.post,
+article.project {
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Resume Page */
+main h3 + p strong {
+  color: #667eea;
+}
+
+main ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+main li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  color: #bbb;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    gap: 15px;
+  }
+
+  main {
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  article.post,
+  article.project {
+    padding: 25px;
+  }
+}
+
+/* Back links */
+main > a {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  color: #667eea;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+main > a:hover {
+  background: #e0e0e0;
+  text-decoration: none;
+}

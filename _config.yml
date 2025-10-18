@@ -1,0 +1,41 @@
+# Site settings
+title: Khanh Nguyen
+email: nguyenngocminhkhanh4999@gmail.com
+description: >-
+  Personal website showcasing my projects, blog posts, and professional experience.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Social links
+github_username: khanhnguyen4999
+linkedin_username: khanh-nguyen-b8ab151a1
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

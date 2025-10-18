@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="project">
+  <h1>{{ page.title }}</h1>
+
+  {% if page.image %}
+  <img src="{{ page.image }}" alt="{{ page.title }}">
+  {% endif %}
+
+  <p><strong>Summary:</strong> {{ page.summary }}</p>
+
+  {% if page.link %}
+  <p><a href="{{ page.link }}" target="_blank">View Project →</a></p>
+  {% endif %}
+
+  {{ content }}
+</article>
+
+<a href="/projects">← Back to Projects</a>
