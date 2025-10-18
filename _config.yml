@@ -3,8 +3,8 @@ title: Khanh Nguyen
 email: nguyenngocminhkhanh4999@gmail.com
 description: >-
   Personal website showcasing my projects, blog posts, and professional experience.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/personal_website" # the subpath of your site, e.g. /blog
+url: "https://khanhnguyen4999.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Social links
 github_username: khanhnguyen4999
