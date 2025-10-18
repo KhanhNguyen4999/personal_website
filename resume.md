@@ -69,4 +69,4 @@ permalink: /resume/
 
 ---
 
-[Download PDF Resume](#) | [Back to Home](/)
+[Download PDF Resume]({{ site.baseurl }}/Resume_CV_khanh-2.pdf) | [Back to Home]({{ site.baseurl }}/)

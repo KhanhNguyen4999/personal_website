@@ -25,4 +25,4 @@ I'd love to connect with you! Feel free to reach out through any of the followin
 
 ---
 
-Check out my [resume](/resume), explore my [projects](/projects), or read my [blog](/blog) to learn more about my work and interests.
+Check out my [resume]({{ site.baseurl }}/resume), explore my [projects]({{ site.baseurl }}/projects), or read my [blog]({{ site.baseurl }}/blog) to learn more about my work and interests.
